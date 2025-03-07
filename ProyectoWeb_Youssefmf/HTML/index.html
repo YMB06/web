@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="es-ES">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Youssef Miftah El Baze</title>
+    <link rel="stylesheet" type="text/css" href="/ProyectoWeb_Youssefmf/CSS/index.CSS">
+    <link rel="stylesheet" type="text/css" href="/ProyectoWeb_Youssefmf/CSS/CSS_General.CSS">
+    <link rel="icon" href="/ProyectoWeb_Youssefmf/Imagenes_y_videos/favicon.png">
+
+</head>
+
+<body>
+    <header>
+        <h1>Youssef Miftah El Baze</h1>
+        <nav class="Menu">
+            <a href="./index.html" title="Pagina principal de mi Porfolio">Inicio</a>
+            <a href="./form.html" title="Formulario de contacto">Formulario</a>
+            <a href="#TablaIdiomas" title="Idiomas">Tabla</a>
+            <a href="#Contactos" title="Los contactos que uso para comunicarme">Contactos</a>
+            <a href="#displayVideos" title="Galeria con videos">Galeria</a>
+        </nav>
+        <!--Menu para moviles-->
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="./index.html" title="Pagina principal de mi Porfolio">Inicio</a>
+        <a href="./form.html" title="Formulario de contacto">Formulario</a>
+        <a href="#TablaIdiomas" title="Idiomas">Tabla</a>
+        <a href="#Contactos" title="Los contactos que uso para comunicarme">Contactos</a>
+        <a href="#displayVideos" title="Galeria con videos">Galeria</a>
+    </nav>
+    </header>
+    <main>
+        <article>
+            <aside>
+                <img id="fotoPerfil" src="/ProyectoWeb_Youssefmf/Imagenes_y_videos/foto.jpg" alt="Foto de perfil" width="300px"
+                    height="400px">
+            </aside>
+            <aside>
+                <h3>Sobre mí:</h3>
+                <p>Soy informático graduado en el I.E.S Cura Valera en el área de sistemas microinformáticos y redes.
+                    Me considero una persona responsable y me gusta ser puntual para cualquier cosa.
+                    También me interesa aprender más cosas constantemente para complementar mis habilidades actuales y
+                    que poco a poco tenga más conocimientos.
+                    He realizado 2 meses de prácticas en Megabit Informática
+                </p>
+                <h4>Formación académica:</h4>
+                <p>I.E.S Cura Valera 2022-2024
+                    Título obtenido: Sistemas microinformáticos y redes
+                </p>
+                <a title="Mi curriculum" href="/ProyectoWeb_Youssefmf/Imagenes_y_videos/Curriculum_Youssefmf.pdf" id="CV" target="_blank">Mi CV para descargar</a>
+            
+
+            
+                
+                    <h3><b>Cosas que he hecho previamente relacionado con páginas web:</b></h3>
+                    <br />
+                    <ol>
+                        <li>Proyecto web</li>
+                        <li>Página sencilla con Wordpress</li>
+                        <li>Uso básico de Docker para crear una página similar a la de moodle centros</li>
+                    </ol>
+                    <h3><b>Habilidades</b></h3>
+                    <br />
+                    <ul>
+                        <li>Conocimientos básicos HTML5 y CSS</li>
+                        <li>Conocimientos básicos sobre Java</li>
+                        <li>Conocimientos básicos de Wordpress y Docker</li>
+                    </ul>
+                
+            </aside>
+        </article>
+        <table id="TablaIdiomas">
+            <tr>
+                <th>Idiomas</th>
+                <th>Nivel</th>
+            </tr>
+            <tr>
+                <td>Español</td>
+                <td>Nativo</td>
+            </tr>
+            <tr>
+                <td>Inglés</td>
+                <td>3.5/5</td>
+            </tr>
+        </table>
+        <h2>Videos que me han ayudado bastante ha entender conceptos</h2>
+        <section id="displayVideos" class="carousel">
+            <div class="carousel-inner">
+                <iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?si=ZLwyvxz6MMG8lGic" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/lfmg-EJ8gm4?si=jVOb9eZTxGzYaNSY" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/HGTJBPNC-Gw?si=tfEv620-9QJDPW4y" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/5OdVJbNCSso?si=cetwVi0mT-q1iPuJ" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+        </section>
+            <audio class="audio" loop autoplay controls hidden>
+                <source src="/ProyectoWeb_Youssefmf/Imagenes_y_videos/black-hole.mp3" type="audio/mp3">
+            </audio>
+            <script>
+                var audio = document.querySelector('.audio');
+                audio.volume = 0.05;
+            </script>        
+            <section id="dev">
+                <h5>Devdocs</h5>
+            <a href="https://devdocs.io/html/" target="_blank" title="Página web con documentación variada">Esta página me ha ayudado bastante también</a>
+            </section>
+            
+
+            <section id="Contactos"><h3 >Contactos</h3>
+                <ul>
+                    <li>+34 664 70 72 83</li>
+                    <li>youssefmf240@gmail.com</li>
+                </ul>
+            </section>
+        <!--Boton que lleva al inicio de la pagina-->
+        <a href="./index.html" class="fixed-button" title="Pagina principal de mi Porfolio">Inicio</a>
+    </main>
+    <script src="/ProyectoWeb_Youssefmf/Scripts/ScriptMenu.js"></script>
+    <script src="/ProyectoWeb_Youssefmf/Scripts/ScriptCarrusel.js"></script>
+
+    <footer>Youssef Miftah El Baze</footer>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+/*
+Index
+Youssef Miftah El Baze
+Diciembre 2024
+*/
+
+
+@media (max-width:70vh) {
+
+    #fotoPerfil {
+        width: 13vh;
+        height: 15vh;
+        margin: auto;
+    }
+
+    aside {
+        font-size: 0.6em;
+    }
+}
+
+/*media query para que el carrusel aparezca y dejen de estar en modo grid los videos*/
+@media (max-width: 70vh) {
+    #displayVideos {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+    }
+
+    .carousel-inner {
+        display: flex;
+        transition: 0.5s ease;
+        width: 73vw;
+        }
+
+    .carousel-inner iframe {
+        width: 44vw;
+        height: auto;
+
+        flex: 1 0 33vw;
+    }
+
+    .carousel-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+}
+
+/*los videos vuelven a estar en un grid y desaparecen los botones de*/
+@media (min-width: 71vh) {
+    #displayVideos {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        width: 50%;
+        margin: auto;
+        padding: 60px;
+        padding-left: 20vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-control {
+        display: none;
+    }
+}
+
+
+aside {
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    width: 50%;
+    float: left;
+}
+
+p::first-letter {
+    font-size: 2em;
+}
+
+#CV {
+    text-decoration: none;
+    color: gold;
+    
+}
+#displayVideos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    width: 50%;
+    margin: auto;
+    padding-left: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    border-radius: 10%;
+}
+
+table {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    caption-side: bottom;
+    border-collapse: collapse;
+    background-image: linear-gradient(to left, #3dffff, #00c9ff);
+}
+
+th {
+    background-color: #0090ff;
+    color: white;
+}
+
+td {
+    color: black;
+}
+
+td,
+th {
+    border: 2px solid black;
+    padding: 10px;
+
+}
+
+#Contactos {
+    float: left;
+    margin: 6vh;
+}
+
+
+#dev {
+    background-color: #0090ff;
+    color: white;
+    padding: 20px;
+    width: 50%;
+    font-size: 1.5em;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#dev a {
+    color: white;
+    text-decoration: none;
+}
+
+#dev a:hover {
+    color: black;
+}

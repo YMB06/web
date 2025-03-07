@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="es-ES">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio YM</title>
+    <link rel="stylesheet" type="text/css" href="/ProyectoWeb_Youssefmf/CSS/form.CSS">
+    <link rel="stylesheet" type="text/css" href="/ProyectoWeb_Youssefmf/CSS/CSS_General.CSS">
+    <link rel="icon" href="/ProyectoWeb_Youssefmf/Imagenes_y_videos/favicon.png">
+</head>
+<body>
+    <header>
+        <h1>Formulario de contacto</h1>
+        <nav class="Menu">
+            <a href="./index.html" title="Pagina principal de mi Porfolio">Inicio</a>
+            <a href="./form.html" title="Formulario de contacto">Formulario</a>
+            <a href="./index.html#TablaIdiomas" title="Idiomas">Tabla</a>
+            <a href="./index.html#Contactos" title="Los contactos que uso para comunicarme">Contactos</a>
+            <a href="./index.html#displayVideos" title="Galeria con videos">Galeria</a>
+        </nav>
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
+        <nav class="mobile-menu" id="mobileMenu">
+            <a href="./index.html" title="Pagina principal de mi Porfolio">Inicio</a>
+            <a href="./form.html" title="Formulario de contacto">Formulario</a>
+            <a href="./index.html#TablaIdiomas" title="Idiomas">Tabla</a>
+            <a href="./index.html#Contactos" title="Los contactos que uso para comunicarme">Contactos</a>
+            <a href="./index.html#displayVideos" title="Galeria con videos">Galeria</a>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com"><br>
+            <label for="direccion">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="+34 123 45 67 89"><br>
+            <label for="mensaje">Razones y datos de interes para contactar:</label>
+            <textarea placeholder="Tu mensaje" rows="10" cols="30" name="mensaje"></textarea><br>
+
+            <input type="submit" value="Enviar" id="enviar"> <input type="reset" value="Borrar">
+        </form>
+        <!--Comprobaciones de formulario-->
+        <script  src="/ProyectoWeb_Youssefmf/Scripts/ScriptForm.js">
+       
+
+
+        </script>
+        <!--Boton que lleva al inicio de la pagina-->
+        <a href="./index.html" class="fixed-button">Inicio</a>
+    </main>
+    <footer>Youssef Miftah El Baze</footer>
+    <script src="/ProyectoWeb_Youssefmf/Scripts/ScriptMenu.js"></script>
+
+</body>
+
+</html>

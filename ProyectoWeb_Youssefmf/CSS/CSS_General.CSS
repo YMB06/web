@@ -1,0 +1,173 @@
+/*
+Proyecto Web-Estilo general para los html
+Youssef Miftah El Baze
+Diciembre 2024
+*/
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: "Fuente";
+    src: url(/ProyectoWeb_Youssefmf/Fuentes/GoodOldDOSSmooth.ttf);
+}
+
+body {
+    background-image: url("/ProyectoWeb_Youssefmf/Imagenes_y_videos/Fondo1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: "Fuente";
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Boton que lleva al inicio*/
+.fixed-button {
+    text-decoration: none;
+    position: fixed;
+    top: 120px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #008cba;
+    color: white;
+    border-radius: 5%;
+    font-size: 16px;
+    transition: all 2s ease;
+
+}
+
+.fixed-button:hover {
+    background-color: #3dffff;
+    color: black;
+    transform: scale(1.06) translate(0px, 0px);
+}
+
+main {
+    color: white;
+    padding: 30px;
+}
+
+header,
+footer {
+    background-color:   #0090ff;
+    text-align: center;
+    border: 1px solid #008cba;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 1vh;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: -10px;
+}
+
+h1, h2, footer {
+    text-shadow: 3px 3px grey;
+    text-align: center;
+}
+
+/*Decoracion del menu horizontal*/
+.Menu>a:hover {
+    background-color: #00feff;
+    color: black;
+    transform: scale(1.01) translate(0px, 0px);
+}
+
+.Menu {
+    border: 2px solid rgb(112, 112, 112);
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+/*decoracion del menu vertical*/
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #0090ff;
+    color: white;
+    position: fixed;
+    top: 7vh;
+    left: 15px;
+    z-index: 1001;
+    border-radius: 5px;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #00c9ff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.mobile-menu a {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.mobile-menu a:hover {
+    background-color: #0090ff;
+}
+
+.mobile-menu.show {
+    transform: translateX(0);
+}
+
+/*se quita el menu para moviles y se pone el menu para pantallas grandes*/
+@media (min-width:71vh) {
+    .Menu {
+        display: block;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .mobile-menu.show {
+        left: 0;
+    }
+        .Menu a {
+            font-size: 0.6em;
+            background-color: #3dffff;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 20px;
+            float: left;
+            width: 20%;
+            transition: all 2s ease;
+        }
+}
+
+/*se quita el menu horizontal y aparece el icono para el menu vertical para moviles*/
+@media (max-width: 70vh) {
+    .Menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .mobile-menu.show {
+        left: 0;
+    }
+}

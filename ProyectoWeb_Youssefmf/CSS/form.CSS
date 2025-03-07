@@ -1,0 +1,16 @@
+/*
+Proyecto Web-Formulario
+Youssef Miftah El Baze
+Diciembre 2024
+*/
+form {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+form>* {
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    width: 40%;
+}
