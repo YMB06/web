@@ -10,11 +10,11 @@ Diciembre 2024
 
 @font-face {
     font-family: "Fuente";
-    src: url(/ProyectoWeb_Youssefmf/Fuentes/GoodOldDOSSmooth.ttf);
+    src: url(../Fuentes/GoodOldDOSSmooth.ttf);
 }
 
 body {
-    background-image: url("/ProyectoWeb_Youssefmf/Imagenes_y_videos/Fondo1.jpg");
+    background-image: url("../Imagenes_y_videos/Fondo1.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
